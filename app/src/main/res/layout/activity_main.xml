@@ -10,10 +10,12 @@
         android:id="@+id/rvAllSongsMain"
         android:layout_width="228dp"
         android:layout_height="340dp"
+        android:layout_marginTop="69dp"
         android:layout_marginEnd="183dp"
-        android:layout_marginBottom="391dp"
+        android:layout_marginBottom="322dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
