@@ -1,6 +1,7 @@
 package com.ghazy.recyclerproject;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // data to populate the RecyclerView with
         ArrayList<String> songNames = new ArrayList<>();
         songNames.add("thank u, next");
         songNames.add("Happier Than Ever");
@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         songNames.add("Smack that");
         songNames.add("Motn Gahar");
 
-        // set up the RecyclerView
         RecyclerView recyclerView = findViewById(R.id.rvAllSongsMain);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter(this, songNames);
